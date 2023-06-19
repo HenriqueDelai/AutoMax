@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Vendas - AutoMax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Automóveis Disponíveis para Venda</h1>
+    <!-- Aqui será exibida a tabela com os automóveis -->
+    <table id="car-table">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os registros dos automóveis serão preenchidos aqui dinamicamente -->
+        </tbody>
+    </table>
+
+    <h2>Novo Automóvel</h2>
+    <!-- Formulário para cadastrar um novo automóvel -->
+    <form id="car-form">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="ano">Ano:</label>
+        <input type="number" id="anofabricacao" name="anofabricacao" required>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
